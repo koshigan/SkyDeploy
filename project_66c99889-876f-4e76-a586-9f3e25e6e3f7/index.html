@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koshigan | Developer & IoT Enthusiast</title>
+    <meta name="description" content="Koshigan - ECE student and developer building real-world projects in IoT, Web Development, and AI.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Koshigan<span class="gradient-text">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero section-spacing">
+        <div class="hero-content reveal">
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Koshigan</span> 👋
+            </h1>
+            <p class="hero-subtitle">
+                An ECE student and passionate developer building real-world projects in <span class="highlight">IoT, Web Development, and AI.</span>
+            </p>
+            <p class="hero-desc">
+                I love creating smart systems like voice assistants and predictive monitoring solutions.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-microphone-alt"></i> Try My Voice Assistant
+                </a>
+                <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                <a href="https://onedrive.live.com/personal/3d421c83bc945b1b/_layouts/15/Doc.aspx?sourcedoc=%7B56049E76-B936-4D67-9187-BD07859A3778%7D&file=Master%20piece.docx&action=default&mobileredirect=true" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-resume">
+                    <i class="fas fa-file-download"></i> Resume
+                </a>
+            </div>
+        </div>
+        <div class="hero-blob"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about section-spacing">
+        <div class="container">
+            <h2 class="section-title reveal"><span>🙋</span> About Me</h2>
+            <div class="about-grid reveal">
+                <div class="about-text glass-card">
+                    <blockquote class="personal-quote">
+                        <i class="fas fa-quote-left"></i> As long as I live, there are infinite chances.
+                    </blockquote>
+                    <p>I am an Electronics and Communication Engineering student with a strong interest in software development, IoT, and AI-based systems.</p>
+                    <p>I enjoy building practical projects that solve real-world problems. Recently, I developed and hosted a voice assistant capable of interacting through speech, and I am also working on a cable fault prediction system using sensors and ESP32.</p>
+                    <p>I am continuously learning and improving my skills in full-stack development, embedded systems, and cloud technologies.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-frame">
+                        <!-- Drop your picture inside an "assets" folder, rename it to profile.jpg -->
+                        <img src="assets/profile.jpg" alt="Koshigan" id="profile-img" onerror="this.src='https://via.placeholder.com/400x400/0b0f19/00f0ff?text=Your+Photo'">
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills section-spacing">
+        <div class="container">
+            <h2 class="section-title reveal"><span>🛠️</span> Skills</h2>
+            <div class="skills-grid reveal">
+                
+                <div class="skill-category glass-card hover-card">
+                    <h3><i class="fas fa-code tag-icon"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card hover-card">
+                    <h3><i class="fas fa-microchip tag-icon"></i> Technologies</h3>
+                    <div class="skill-tags">
+                        <span>ESP32</span><span>IoT Systems</span><span>Sensors (Voltage, Temp, Current)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card hover-card">
+                    <h3><i class="fas fa-globe tag-icon"></i> Web</h3>
+                    <div class="skill-tags">
+                        <span>Frontend (HTML, CSS, JS)</span><span>JSP</span><span>Servlets</span><span>JDBC</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card hover-card">
+                    <h3><i class="fas fa-toolbox tag-icon"></i> Tools</h3>
+                    <div class="skill-tags">
+                        <span>Git & GitHub</span><span>Arduino IDE</span><span>VS Code</span><span>Vercel (Hosting)</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects section-spacing">
+        <div class="container">
+            <h2 class="section-title reveal"><span>📂</span> Featured Projects</h2>
+            <p class="section-subtitle reveal">Showcasing my best work in AI, IoT, and Web Development.</p>
+            
+            <div class="projects-grid">
+                
+                <!-- Main Featured Project -->
+                <div class="project-card featured main-project reveal glass-card hover-card">
+                    <div class="project-content">
+                        <div class="project-badge highlight-badge"><i class="fas fa-fire"></i> Main Highlight</div>
+                        <h3 class="project-title">🎤 Voice Assistant</h3>
+                        <p class="project-desc">
+                            Developed a web-based voice assistant capable of understanding and responding to user commands using speech recognition and text-to-speech.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle accent-icon"></i> Voice input and audio response</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Multi-language support (English & Tamil)</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Real-time conversation handling</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Hosted online for public access</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>JavaScript</span><span>Web Speech API</span><span>HTML</span><span>CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary small-btn"><i class="fas fa-external-link-alt"></i> Try Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Featured Project -->
+                <div class="project-card featured secondary-project reveal glass-card hover-card">
+                    <div class="project-content">
+                        <div class="project-badge"><i class="fas fa-bolt"></i> Important</div>
+                        <h3 class="project-title">⚡ Cable Fault Prediction System</h3>
+                        <p class="project-desc">
+                            Designed a predictive monitoring system for underground cables using sensors like voltage, current, and temperature.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle accent-icon"></i> Detect abnormal conditions</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Predict cable faults before failure</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Real-time monitoring using ESP32</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>ESP32</span><span>IoT Sensors</span><span>Embedded C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard Projects -->
+                <div class="project-card reveal glass-card hover-card">
+                    <div class="project-content">
+                        <h3 class="project-title">📊 Attendance Website</h3>
+                        <p class="project-desc">
+                            Developed a web-based attendance management system for tracking student and teacher attendance.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle accent-icon"></i> Add and manage records</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Simple UI without frameworks</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Separate HTML, CSS, and JS files</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal glass-card hover-card">
+                    <div class="project-content">
+                        <h3 class="project-title">📚 Library Management System</h3>
+                        <p class="project-desc">
+                            Built a system to manage books, users, and transactions using Java.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle accent-icon"></i> Book issue/return</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Database integration</li>
+                            <li><i class="fas fa-check-circle accent-icon"></i> Efficient record handling</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Java</span><span>JDBC</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience section-spacing">
+        <div class="container">
+            <h2 class="section-title reveal"><span>📜</span> Experience</h2>
+            <div class="timeline reveal">
+                <div class="timeline-item glass-card hover-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2025 – July 2025</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer Intern</h3>
+                        <h4 class="company">RevinTech</h4>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i> Worked on real-time web applications.</li>
+                            <li><i class="fas fa-angle-right"></i> Learned frontend and backend integration.</li>
+                            <li><i class="fas fa-angle-right"></i> Improved problem-solving and development skills.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section-spacing">
+        <div class="container reveal">
+            <h2 class="section-title text-center"><span>📞</span> Let's Connect</h2>
+            <p class="contact-desc text-center">Feel free to reach out for collaborations or just a friendly hello!</p>
+            
+            <div class="contact-methods">
+                <a href="mailto:koshigan20@gmail.com" class="contact-card glass-card hover-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <span>Email</span>
+                    <p>koshigan20@gmail.com</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/koshigan26" target="_blank" rel="noopener noreferrer" class="contact-card glass-card hover-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <span>LinkedIn</span>
+                    <p>Koshigan</p>
+                </a>
+
+                <a href="https://github.com/koshigan" target="_blank" rel="noopener noreferrer" class="contact-card glass-card hover-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <span>GitHub</span>
+                    <p>koshigan</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Koshigan. Built with ❤️ using modern web technologies.</p>
+        <p class="footer-links">
+            <a href="https://github.com/koshigan" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/koshigan26" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:koshigan20@gmail.com"><i class="fas fa-envelope"></i></a>
+        </p>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
