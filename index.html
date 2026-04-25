@@ -1,17 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SkyDeploy</title>
+<meta charset="UTF-8">
+<title>SkyDeploy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: radial-gradient(circle, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.drop-area {
+    border: 2px dashed #667eea;
+    padding: 30px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.drop-area.dragover {
+    background: #f0f3ff;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
 </head>
-<body style="text-align:center; margin-top:100px;">
 
-    <h1>SkyDeploy </h1>
-    <p>Upload your static website</p>
+<body>
 
-    <form action="upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="files" multiple><br><br>
-        <button type="submit">Upload</button>
+<div class="container">
+    <h2>🚀 SkyDeploy</h2>
+    <p>Drag & Drop your website files</p>
+
+    <form id="uploadForm" action="upload" method="post" enctype="multipart/form-data">
+
+        <div class="drop-area" id="dropArea">
+            Drop files here or click to upload
+        </div>
+
+        <input type="file" id="fileInput" name="files" multiple hidden>
+
+        <button type="submit">Deploy 🚀</button>
     </form>
+</div>
+
+<script>
+const dropArea = document.getElementById("dropArea");
+const fileInput = document.getElementById("fileInput");
+
+dropArea.addEventListener("click", () => fileInput.click());
+
+dropArea.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropArea.classList.add("dragover");
+});
+
+dropArea.addEventListener("dragleave", () => {
+    dropArea.classList.remove("dragover");
+});
+
+dropArea.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropArea.classList.remove("dragover");
+
+    fileInput.files = e.dataTransfer.files;
+});
+</script>
 
 </body>
 </html>
